@@ -1,0 +1,37 @@
+{
+    "name": "yosmy/authentication-with-code",
+    "description": "",
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*",
+        "yosmy/authentication": "@dev",
+        "yosmy/phone-normalization": "@dev",
+        "yosmy/phone-verification": "@dev"
+    },
+    "require-dev": {
+        "symfony/debug": "~4",
+        "phpunit/phpunit": "^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yosmy\\": [
+                "src"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yosmy\\Test\\": [
+                "tests"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://php.yosmy.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
